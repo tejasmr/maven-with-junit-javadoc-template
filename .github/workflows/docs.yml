@@ -1,0 +1,19 @@
+name: Generate docs
+on:
+  push:
+jobs:
+  deploy-pages:
+    name: Deploy docs to GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout the repository
+      uses: actions/checkout@v2
+    - name: Deploy docs
+      uses: avinal/github-pages-deploy-action@main
+      with:
+        GITHUB_TOKEN: ${{ github.token }}
+        LANGUAGE: "java"
+        MAKE_COMMAND: "make html" 
+        PAGES_BRANCH: "gh-pages"
+        BUILD_FROM: "main"
+        DOCS_FOLDER: "docs"
