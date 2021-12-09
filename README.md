@@ -35,3 +35,9 @@ Here package name will be com.example, you can have your own package name. Note 
 All source files in src/main/java/com/example/*
 
 All test files in src/test/java/com/example/*
+
+All your docs will be generated in gh-pages branch. You can edit the branch name in which you want the docs to be generated at .github/workflows/docs.yml
+
+Enable Github pages and make the source at gh-pages branch and docs folder
+
+Preview at : https://tezz-io.github.io/maven-with-junit-javadoc-template
