@@ -28,4 +28,5 @@ Folder/File Structure
 Here package name will be com.example, you can have your own package name. Note that the package name is same as group id.
 
 All source files in src/main/java/com/example/*
+
 All test files in src/test/java/com/example/*
